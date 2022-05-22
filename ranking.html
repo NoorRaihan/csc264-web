@@ -92,12 +92,6 @@
 			margin-right: 20%;
 		}
 
-		.pic-trends {
-			background-color: tomato;
-			width: 100%;
-			height: 300%;
-		}
-
         .m-links-active {
             color: tomato;
         }
@@ -108,6 +102,37 @@
 			padding: 10px;
 		}
 
+        .rank-head {
+            color: black;
+            margin-left: 20%;
+            margin-right: 20%;
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+        
+        .rank-table {
+            text-align: left;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        th, td, table {
+            border: 1px solid grey;
+            border-collapse: collapse;
+        }
+
+        th {
+            padding: 20px 53px;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        tr:hover {
+            background-color: lightsalmon;
+            transition: .5s;
+        }
 	</style>
 	
 	<body>
@@ -132,20 +157,87 @@
 		<!-- ------------------------------ -->
 
 		<!-- main title and head is hereeeeee -->
-		<section style="background-image: url('assets/banner.png'); background-size:cover; background-repeat: no-repeat; width:100%;" class="main-header">
-			<div class="flex-wrapper">
-				<div class="main-title flex-box">
-					<div style="font-size: 220%; text-align: left; padding-left: 50px;">
-						<h1>Style with the <span style="color: tomato">SLIPS</span></h1>
-						<h4 >Getting Always Relax</h4>
-					</div>
-					
-					
-				</div>
-				<div style="text-align: left;" class="main-image flex-box">
-					<img style="height: auto; width: 70%;" src="assets/running-shoes.png" alt="">
-				</div>
-			</div>
+		<section class="main-header">
+			<div class="rank-head">
+                <h1 style="color: black;">Top 10 Slippers Rankings</h1>
+                <p style="color: black;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio labore maxime totam harum. Error dolorem quam, dolorum non doloribus nemo unde, expedita atque recusandae consequatur repudiandae, quasi optio neque ullam?</p>
+            </div>
+            <div class="rank">
+                <table class="rank-table">
+                    <tr>
+                        <th style="text-align: center;" colspan="5">YEAR 2020</th>
+                    </tr>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Brand</th>
+                        <th>Revenue</th>
+                        <th>Branch</th>
+                        <th>Country</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Crocs</td>
+                        <td>2 B</td>
+                        <td>Colorado</td>
+                        <td style="text-align:center;" rowspan="2">USA</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Nike</td>
+                        <td>37.4 B</td>
+                        <td>Oregon</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Adidas</td>
+                        <td>25.9 B</td>
+                        <td>Herzogenaurach</td>
+                        <td style="text-align:center;">Germany</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Ralph Lauren</td>
+                        <td>6.18 B</td>
+                        <td>New York</td>
+                        <td style="text-align:center;" rowspan="7">USA</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Sketchers</td>
+                        <td>5.22 B</td>
+                        <td>California</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Steve Madden</td>
+                        <td>1.4 B</td>
+                        <td rowspan="2">New York</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Capri Holdings</td>
+                        <td>4.71 B</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Wollrich</td>
+                        <td>0.25 B</td>
+                        <td>Pennsylvania</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Totes Isotoner</td>
+                        <td>0.12 B</td>
+                        <td>Ohio</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Dockers</td>
+                        <td>0.1 B</td>
+                        <td>California</td>
+                    </tr>
+                </table>
+            </div>
 		</section>
 		<!-- ---------------------------- -->
 
