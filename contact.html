@@ -108,6 +108,85 @@
 			padding: 10px;
 		}
 
+        label {
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 80%;
+            font-size: 100%;
+            border: 1px solid #010311;
+            border-radius: 5px;
+            padding: 5px;
+            font-family: Poppins;
+        }
+
+        input[type=text]:focus, input[type=phone]:focus, input[type=email]:focus, textarea:focus, select:focus {
+            border: 2px solid tomato;
+            outline: none !important;
+            border-radius: 10px;
+            transition: .5s;
+        }
+
+        textarea {
+            font-family: Poppins;
+        }
+
+        .contact-form {
+            margin-left: 10%;
+        }
+
+        .contact-card {
+            background-color: #030A2E;
+            padding-left: 30px;
+            padding-bottom: 10px;
+            text-align: right;
+            border-radius: 30px;
+            box-shadow: -15px 10px tomato;
+        }
+
+        .contact-details {
+            margin-top: 10%;
+        }
+
+        .card {
+            margin-top: 25%;
+        }
+
+        #submit-btn {
+            border: none!important;
+            background-color: #030A2E;
+            color: white;
+            font-family: Poppins;
+            font-weight: bold;
+            padding: 5px 20px 5px;
+            font-size: 110%;
+            border-radius: 20px;
+            
+        }
+
+        #submit-btn:hover {
+            box-shadow: -5px 5px tomato;
+            transition: 0.3s;
+        }
+
+        #clr-btn {
+            margin-left: 10px;
+            border: none!important;
+            background-color: #030A2E;
+            color: white;
+            font-family: Poppins;
+            font-weight: bold;
+            padding: 5px 20px 5px;
+            font-size: 110%;
+            border-radius: 20px;
+            
+        }
+
+        #clr-btn:hover {
+            box-shadow: -5px 5px tomato;
+            transition: 0.3s;
+        }
 	</style>
 	
 	<body>
@@ -132,19 +211,112 @@
 		<!-- ------------------------------ -->
 
 		<!-- main title and head is hereeeeee -->
-		<section style="background-image: url('assets/banner.png'); background-size:cover; background-repeat: no-repeat; width:100%;" class="main-header">
-			<div class="flex-wrapper">
-				<div class="main-title flex-box">
-					<div style="font-size: 220%; text-align: left; padding-left: 50px;">
-						<h1>Style with the <span style="color: tomato">SLIPS</span></h1>
-						<h4 >Getting Always Relax</h4>
-					</div>
-					
-					
-				</div>
-				<div style="text-align: left;" class="main-image flex-box">
-					<img style="height: auto; width: 70%;" src="assets/running-shoes.png" alt="">
-				</div>
+		<section class="main-header">
+			<div class="flex-wrapper contact-details" style="margin-top: 5%;">
+				<div class="flex-box contact-form">
+                    <h1 style="color: black; text-align: left;">Contact Form</h1>
+                    <form action="" method="" enctype="multipart/form-data">
+                        <div style="text-align: left;">
+                            <label for="name">Name</label><br>
+                            <input type="text" placeholder="Johnny Depp">
+                        </div>
+                        <div style="text-align: left;  margin-top: 2%;">
+                            <label for="email">Email</label><br>
+                            <input type="email" placeholder="johny@domain.com">
+                        </div>
+                        <div style="text-align: left;  margin-top: 2%;">
+                            <label for="phone">Phone</label><br>
+                            <input type="phone" placeholder="01XXXXXXXX">
+                        </div>
+                        <div style="text-align: left;  margin-top: 2%;">
+                            <label for="category">Category</label><br>
+                            <select name="" id="">
+                                <option value="">Career</option>
+                                <option value="">Web Report</option>
+                                <option value="">Others</option>
+                            </select>
+                        </div>
+                       <div style="text-align: left;  margin-top: 2%;">
+                           <label for="desc">Description</label><br>
+                           <textarea name="" id="" cols="30" rows="10" placeholder="Your Description Here"></textarea>
+                       </div>
+                       <div style="text-align: left;  margin-top: 2%;">
+                            <label for="file">Attached File</label><br>
+                            <input type="file">
+                       </div>
+
+                       <div style="text-align: left; padding-top: 10px;">
+                            <button type="submit" name="submit-btn" id="submit-btn">Submit</button>
+                            <button type="reset" name="clr-btn" id="clr-btn">Clear</button>
+                       </div>
+                    </form>
+                </div>
+
+                <div class="flex-box contact-card">
+                    <h1 style="text-align: center;">Meet and Talk with Us</h1>
+                    <div style="text-align: left;">
+                           
+                        <div>
+                            <h3 style="margin:0; padding: 0">Company Name:</h3>
+                            <p style="margin:0; padding-bottom: 2%;">Slippio Fashion & Design</p>
+                        </div>
+
+                        <div>
+                            <h3 style="margin:0; padding: 0;">Phone</h3>
+                            <p style="margin:0; padding: 0; padding-bottom: 2%;">+60177387782</p>
+                        </div>
+
+                        <div>
+                            <h3 style="margin:0; padding: 0;">Email</h3>
+                            <p style="margin:0; padding: 0; padding-bottom: 2%;">2020821002@student.uitm.edu.my</p>
+                        </div>
+
+                        <div>
+                            <h3 style="margin:0; padding: 0;">Location</h3>
+                            <p style="margin:0; padding: 0; padding-bottom: 4%;">3 205 Jln Negara 2 Taman Melawati Hulu, Klang, Selangor</p>
+                        </div>
+
+                        <div>
+                            <div style="text-align: center;">
+                                <iframe width="400px" height="400px" id="gmap_canvas" src="https://maps.google.com/maps?q=3%20205%20Jln%20Negara%202%20Taman%20Melawati%20Hulu,%20Klang,%20Selangor&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="flex-box contact-card" style="text-align: center;">
+                    <div class="card">
+                        <h1>Meet Us</h1>
+                        <div style="text-align: left; margin: 5%;">
+                           
+                            <div>
+                                <h3 style="margin:0; padding: 0;">Company Name:</h3>
+                                <p style="margin:0; padding: 0; padding-bottom: 2%;">Slippio Fashion & Design</p>
+                            </div>
+
+                            <div>
+                                <h3 style="margin:0; padding: 0;">Phone</h3>
+                                <p style="margin:0; padding: 0; padding-bottom: 2%;">+60177387782</p>
+                            </div>
+
+                            <div>
+                                <h3 style="margin:0; padding: 0;">Email</h3>
+                                <p style="margin:0; padding: 0; padding-bottom: 2%;">2020821002@student.uitm.edu.my</p>
+                            </div>
+
+                            <div>
+                                <h3 style="margin:0; padding: 0;">Location</h3>
+                                <p style="margin:0; padding: 0; padding-bottom: 5%;">3 205 Jln Negara 2 Taman Melawati Hulu, Klang, Selangor</p>
+                            </div>
+
+                            <div class="mapouter">
+                                <div class="gmap_canvas">
+                                    <iframe width="400px" height="400px" id="gmap_canvas" src="https://maps.google.com/maps?q=3%20205%20Jln%20Negara%202%20Taman%20Melawati%20Hulu,%20Klang,%20Selangor&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
 			</div>
 		</section>
 		<!-- ---------------------------- -->
