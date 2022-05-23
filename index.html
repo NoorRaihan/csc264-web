@@ -56,6 +56,7 @@
 
 		.m-links {
 			color: white;
+			transition: .3s;
 		}
 
 		.logo {
@@ -72,13 +73,15 @@
 		}
 
 		.main-header {
-			padding: 80px;
+			padding: 0;
 		}
 
 		.flex-wrapper {
 			display: flex; 
 			justify-content: center; 
 			align-items: center;
+			margin: 0;
+			padding: 0;
 		}
 
 		.flex-box	{
@@ -108,6 +111,39 @@
 			padding: 10px;
 		}
 
+		.pic-trends {
+			text-align: center;
+		}
+
+		.trend-sub-pic {
+			width: 20%; 
+			height: auto; 
+			margin-right: 4%; 
+			margin-left: 4%;
+			margin-top: 4%; 
+			margin-bottom: 4%;
+			box-shadow: -10px 10px #030A2E;
+			transition: .5s
+		}
+
+		.trend-sub-pic:hover {
+			box-shadow: -20px 20px #030A2E;
+			width: 23%;
+			transition: .5s;
+		}
+
+		.comfort-pic {
+			width: 40%; 
+			height: auto;
+			box-shadow: -20px 20px #030A2E;
+			transition: .5s;
+		}
+
+		.comfort-pic:hover {
+			width: 42%;
+			box-shadow: -30px 30px #030A2E;
+			transition: .5s;
+		}
 	</style>
 	
 	<body>
@@ -129,18 +165,18 @@
 		<!-- ------------------------------ -->
 
 		<!-- main title and head is hereeeeee -->
-		<section style="background-image: url('assets/banner.png'); background-size:cover; background-repeat: no-repeat; width:100%;" class="main-header">
+		<section class="main-header" style="background-image: url('assets/banner.png'); background-size:cover; background-repeat: no-repeat; width:100%;">
 			<div class="flex-wrapper">
 				<div class="main-title flex-box">
-					<div style="font-size: 220%; text-align: left; padding-left: 50px;">
+					<div style="font-size: 220%; text-align: left; padding-left: 30%;">
 						<h1>Style with the <span style="color: tomato">SLIPS</span></h1>
 						<h4 >Getting Always Relax</h4>
 					</div>
 					
 					
 				</div>
-				<div style="text-align: left;" class="main-image flex-box">
-					<img style="height: auto; width: 70%;" src="assets/running-shoes.png" alt="">
+				<div style="text-align: center;" class="flex-box">
+					<img style="height: auto; width: 70%; vertical-align: bottom;" src="assets/rai-slip1.png" alt="">
 				</div>
 			</div>
 		</section>
@@ -150,7 +186,7 @@
 		<section id="comfort">
 			<div class="flex-wrapper">
 				<div class="flex-box" style="margin-top: 5%">
-					<img src="assets/shoes-img3.png" alt="">
+					<img class="comfort-pic" src="assets/rai-slip2.jpg" alt="">
 				</div>
 				<div class="flex-box" style="text-align: left; max-width: 35%; margin-right: 10%;">
 					<h1 style="color: tomato; font-size: 310%;">A Comfort That Everyone Needs</h1>
@@ -181,7 +217,15 @@
 			</div>
 
 			<div class="pic-trends">
-				picture here
+				<div>
+					<img class="trend-sub-pic" src="assets/rai-slip4.jpg" alt="">
+					<img class="trend-sub-pic" src="assets/rai-slip3.jpg" alt="">
+					<img class="trend-sub-pic" src="assets/rai-slip5.jpg" alt="">
+				</div>
+				<div>
+					<img class="trend-sub-pic" src="assets/rai-slip8.jpg" alt="">
+					<img class="trend-sub-pic" src="assets/rai-slip7.jpg" alt="">
+				</div>
 			</div>
 		</section>
 		
